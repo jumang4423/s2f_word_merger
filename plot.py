@@ -46,7 +46,8 @@ def main():
     print("here is the graph:")
     # draw graph
     nx.draw(graph, with_labels=True, node_color=colormap, node_size=100, font_size=12, font_color="black", alpha=0.5, linewidths=40, node_shape='s', width=2)
-    plt.show()
+    # plt to png
+    plt.savefig("./word_graph.png")
 
 if __name__ == '__main__':
     main()
