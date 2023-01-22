@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 def main():
     # get args
     word_dict_filepath = sys.argv[1]
+    plot_output_filepath = sys.argv[2]
 
     # var
     word_dict = {}
@@ -47,7 +48,7 @@ def main():
     # draw graph
     nx.draw(graph, with_labels=True, node_color=colormap, node_size=100, font_size=12, font_color="black", alpha=0.5, linewidths=40, node_shape='s', width=2)
     # plt to png
-    plt.savefig("./word_graph.png")
+    plt.savefig(plot_output_filepath)
 
 if __name__ == '__main__':
     main()
